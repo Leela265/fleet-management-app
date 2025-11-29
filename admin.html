@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar{
+                background: #333;
+                color: #fff;
+                padding: 10px;
+            }
+            .layout{
+                display: flex;
+            }
+            .sidebar{
+                width: 100%;
+                border-right: 1px solid;
+                padding: 10px;
+            }
+            label,input,select{
+                display: block;
+                width:50%;
+                margin-right: 8px;
+            }
+            button{
+                width:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">Fleet Admin</div>
+        <div class="layout">
+            <div class="sidebar">
+                <h3>Fleet Form</h3>
+                <form id="fleetForm">
+                    <label for="regno">Reg No of Vehicle</label>
+                    <input type="text" id="regno" required>
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option>Auto</option>
+                        <option>Car</option>
+                        <option>Truck</option>
+                        <option>Bus</option>
+                    </select>
+                    <label for="driver">Driver Name</label>
+                    <input type="text" id="driver" required>
+                    <label>
+                        <input type="checkbox" id="avail" checked>
+                        Is Available
+                    </label>
+                    <button type="submit">Add fleet</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
