@@ -22,7 +22,7 @@
 <body>
     <div class="box">
         <h2>Login</h2>
-        <form>
+        <form id="loginForm">
             <label for="email">Email</label>
             <input type="email" id="email" required>
             <label for="password">password</label>
@@ -33,5 +33,17 @@
     <script>
         const VALID_EMAIL="admin@gmail.com";
         const VALID_PASSWORD="admin1234";
+        document.getElementById("loginForm").addEventListener("submit",function(e){
+            e.preventDefault();
+            const email=document.getElementById("email").value.trim();
+            const pwd=document.getElementById("password").value;
+            if(email==VALID_EMAIL && pwd==VALID_PASSWORD){
+                alert("Login success");
+            }
+            else{
+                alert( "Wrong email or password");
+            }
+        })
     </script>
 </body>
+</html>
