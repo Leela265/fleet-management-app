@@ -1,11 +1,26 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>
         Login
     </title>
+    <style>
+        body{
+            font-family: cursive;
+        }
+        .box{
+            width:260px;
+            margin:80px auto;
+        }
+        label,input{
+            display:block;
+            width:100px;
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 <body>
-    <div >
+    <div class="box">
         <h2>Login</h2>
         <form>
             <label for="email">Email</label>
@@ -15,4 +30,8 @@
             <button type="submit">Login</button>
         </form>
     </div>
+    <script>
+        const VALID_EMAIL="admin@gmail.com";
+        const VALID_PASSWORD="admin1234";
+    </script>
 </body>
